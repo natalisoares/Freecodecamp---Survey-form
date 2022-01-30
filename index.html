@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-from" action="index.html" method="post">
+      <div class="form-section">
+        <label id="name-label" for="name">Name</label><br>
+        <input id="name" type="text" name="name" value="" placeholder="Enter your name" required>
+      </div>
+      <div class="form-section">
+        <label id="email-label"for="email">Email</label><br>
+        <input id="email" type="email" name="email" value="" placeholder="Enter your email" required>
+      </div>
+      <div class="form-section">
+        <label id="number-label"for="number">Age (optional)</label><br>
+        <input id="number" type="number" name="age" min="2" max="3" value="" placeholder="Age">
+      </div>
+      <div class="form-section">
+        <label for="current-role">Wich option best describe your current role?</label><br>
+        <select id="dropdown" name="current-role">
+        <option disabled selected value>Select your current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full time job</option>
+        <option value="freelance">Freelance job</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <label for="recomendation">Would you recommend us to a friend?</label><br>
+        <label for="recomendation">Definitely</label>
+        <input type="radio" name="recomendation" value="Definitely"  checked><br>
+        <label for="recomendation">Maybe</label>
+        <input  type="radio" name="recomendation" value="Maybe"><br>
+        <label for="recomendation">Not sure</label>
+        <input  type="radio" name="recomendation" value="not sure"><br>
+      </div>
+      <div class="form-section">
+        <label for="improvement">What would you like to see improved?</label><br>
+        <label for="projects">Projects</label>
+        <input type="checkbox" name="Projects" value="projects"><br>
+        <label for="video">Video</label>
+        <input  type="checkbox" name="video" value="video"><br>
+        <label for="challenges">Challenges</label>
+        <input type="checkbox" name="chanllenges" value="challenges"><br>
+      </div>
+      <div class="form-section">
+        <label for="comments">Any comments or suggestions?</label><br>
+        <textarea name="comments" rows="8" cols="80">Enter your comments here...</textarea>
+      </div>
+        <div class="form-section">
+           <button id="submit" type="submit" class="sabmit" value="Submit">Submit</button>
+        </div>
+    </form>
+  </div>
+</body>
+
+</html>
